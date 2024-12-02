@@ -1,7 +1,7 @@
 #include "Fixed.hpp"
 #include <iostream>
 
-const int Fixed::_dec = 0;
+const int Fixed::_dec = 8;
 
 Fixed::Fixed() : _fix(0)
 {
