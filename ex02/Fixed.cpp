@@ -72,3 +72,45 @@ std::ostream&	operator<<(std::ostream& out, Fixed const& rhs)
 	out << rhs.toFloat();
 	return (out);
 }
+
+bool Fixed::operator==(const Fixed& rs)
+{
+	if (rs.toFloat() == this->toFloat())
+		return (true);
+	return (false);
+}
+
+bool Fixed::operator>(const Fixed& rs)
+{
+	if (rs.toFloat() > this->toFloat())
+		return (true);
+	return (false);
+}
+
+bool Fixed::operator<(const Fixed& rs)
+{
+	if (rs.toFloat() < this->toFloat())
+		return (true);
+	return (false);
+}
+
+bool Fixed::operator<=(const Fixed& rs)
+{
+	if (rs.toFloat() <= this->toFloat())
+		return (true);
+	return (false);
+}
+
+bool Fixed::operator>=(const Fixed& rs)
+{
+	if (rs.toFloat() > this->toFloat())
+		return (true);
+	return (false);
+}
+
+bool Fixed::operator!=(const Fixed& rs)
+{
+	if (rs.toFloat() != this->toFloat())
+		return (true);
+	return (false);
+}

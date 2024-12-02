@@ -15,6 +15,19 @@ class Fixed
 
 		Fixed& operator=(const Fixed& rhs);
 
+		bool operator==(const Fixed& rs);
+		bool operator>(const Fixed& rs);
+		bool operator<(const Fixed& rs);
+		bool operator<=(const Fixed& rs);
+		bool operator>=(const Fixed& rs);
+		bool operator!=(const Fixed& rs);
+
+
+
+
+
+
+
 		int getRawBits(void);
 		void setRawBits(int const raw);
 		float toFloat(void) const;
